@@ -1,0 +1,9 @@
+<section class= 'form-container add-post'>
+
+    <form method="post" action="{% url 'news_item_create' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</section> 
+

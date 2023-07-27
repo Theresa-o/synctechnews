@@ -1,0 +1,30 @@
+<section class='navbar'>
+    <nav>
+        <div class="logo">
+            <h1 class="logo-text"><a href="{% url 'home' %}">QUICK NEWS</a></h1>
+        </div>
+        <div class="menu">
+            <ul class="links">
+                <li><a id="active" href="{% url 'home' %}">Latest</a></li>
+                <li><a href="{% url 'home' %}?type=job">Job</a></li>
+                <li><a href="{% url 'home' %}?type=story">Story</a></li>
+                <li><a href="{% url 'home' %}?type=comment">Comment</a></li>
+                <li><a href="{% url 'home' %}?type=poll">Poll</a></li>
+                <li><a href="{% url 'news_item_create' %}">Post</a></li>
+
+            </ul>
+        </div>
+        <div class="search-box">
+            <form action="{% url 'home' %}" method="get">
+                <input name="search" type="text" placeholder="Search...">
+                <button id="search" type="submit">Search</button>
+            </form>
+        </div>
+        <!-- Hamburger for responsiveness, adjust screen to see effect -->
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+</section>

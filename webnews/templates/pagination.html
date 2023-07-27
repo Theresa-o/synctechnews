@@ -1,0 +1,23 @@
+<section class='container pagination'>
+    <section class='first-page'>
+        {% if news_items.has_previous %}
+            <a href="?page=1" class='first'>
+                ◀️◀️
+            </a>
+            <a href="?page={{ news_items.previous_page_number }}" class='previous'>
+                ◀️
+            </a>
+        {% endif %}
+
+        <a class='num-of'>Page {{ news_items.number }} of {{ news_items.paginator.num_pages }}</a>
+
+        {% if news_items.has_next %}
+            <a href="?page={{ news_items.next_page_number }}" class='next'>
+                ▶️
+            </a>
+            <a href="?page={{ news_items.paginator.num_pages }}" class='last'>
+                ▶️▶️
+            </a>
+        {% endif %}
+    </section>
+</section>

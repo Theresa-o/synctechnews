@@ -1,0 +1,17 @@
+<section class="item-info">
+    <div class="container">
+            <div class="meta-info">
+                <a href="{{ item.url }}">
+                    <span class="author">by {{item.by}}</span>
+                    <span class="time">{{item.time|timesince}} ago</span>
+                    <span class="score"> {{item.score}}</span>
+                    </div>
+                    <div class="text">
+                        <p class="title"><strong>Title:</strong> {{item.title}}</p>
+                        <p class="type"><strong>Type:</strong> {{item.item_type}}</p>
+                        <p class="url-link"><strong>URL:</strong> {{ item.url }}</p>
+                    </div>
+                </a>
+            </div>
+      </div>
+</section>

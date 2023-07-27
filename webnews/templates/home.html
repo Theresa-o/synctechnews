@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block extra%}
+<link rel='stylesheet' type='text/css' href="{% static 'style.css' %}" />
+{% endblock %}
+
+{% block header %}
+<header>
+    {% include 'navbar.html' %}
+</header>
+{% endblock %}
+
+{% block main %}
+<ul style='list-style-type: none'>
+
+    {% for item in news_items %}
+        <li class="each-heading">
+            {% include 'body.html' %}
+        </li>
+    {% endfor %}
+
+    {% include 'pagination.html' %}
+</ul>
+{% endblock %}

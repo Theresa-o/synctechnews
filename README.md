@@ -15,6 +15,8 @@ To run this project on your local machine, please follow the following steps:
 
 - cd into hackernews
 
+- Create and activate a virtual environment
+
 - Install the requirements py running pip install -r requirements.txt
 
 - Run the server using python -m manage.py runserver 

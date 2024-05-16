@@ -31,6 +31,6 @@ To run this project on your local machine, please follow the following steps:
 - Exposes an API with endpoints to list and add news items.
 - Allows updating and deleting items created through the API but not data retrieved from Hacker News.
 
-Overall, the project aims to create a web app that makes it easier to navigate through tech-related news from Hacker News. It achieves this by syncing and displaying the latest news, allowing filtering and searching, implementing pagination, and providing an API for data consumption. Additionally, the project includes some bonus features like displaying children items and enabling updates and deletions through the API.
+Overall, this project aims to create a web app that makes it easier to navigate through tech-related news from Hacker News. It achieves this by syncing and displaying the latest news, allowing filtering and searching, implementing pagination, and providing an API for data consumption. Additionally, the project includes some bonus features like displaying children items and enabling updates and deletions through the API.
 
 
